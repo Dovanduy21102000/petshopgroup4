@@ -3,7 +3,8 @@
 // Biến môi trường, dùng chung toàn hệ thống
 // Khai báo dưới dạng HẰNG SỐ để không phải dùng $GLOBALS
 
-define('BASE_URL'       , 'http://localhost/mvc-oop-basic/');
+define('BASE_URL'       , 'http://localhost/petshopgroup4/petshopgroup4/petshopgroup4/');
+define('BASE_URL_ADMIN'       , 'http://localhost/petshopgroup4/petshopgroup4/petshopgroup4/admin/');
 
 define('DB_HOST'    , 'localhost');
 define('DB_PORT'    , 3306);

@@ -21,3 +21,45 @@ function connectDB() {
         echo ("Connection failed: " . $e->getMessage());
     }
 }
+function formatDate($date){
+    return date("d-m-Y", strtotime($date));
+}
+function deleteSessionError(){
+    if (isset($_SESSION['flash'])) {
+        //Hủy session sau khi đã tải trang
+        unset($_SESSION['flash']);
+        unset($_SESSION['error']);
+        unset($_SESSION['success']);
+        // session_unset();
+        
+        
+    }
+}
+function deleteFile($file){
+    $pathDelete = PATH_ROOT . $file;
+    if(file_exists($pathDelete)){
+        unlink($pathDelete);
+    }
+}
+function uploadFile($file, $folderUpload){
+    $pathStorage = $folderUpload . time() . $file['name'];
+    
+    $from = $file['tmp_name'];
+    $to = PATH_ROOT . $pathStorage;
+
+    if(move_uploaded_file($from,$to)){
+        return $pathStorage;
+    }
+    return null;
+}
+function uploadFileAlbum($file, $folderUpload , $key){
+    $pathStorage = $folderUpload . time() . $file['name'][$key];
+    
+    $from = $file['tmp_name'][$key];
+    $to = PATH_ROOT . $pathStorage;
+
+    if(move_uploaded_file($from,$to)){
+        return $pathStorage;
+    }
+    return null;
+}
