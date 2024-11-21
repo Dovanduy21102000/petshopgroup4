@@ -10,8 +10,8 @@ class AdminTaiKhoanController
         $this->modelDonHang = new AdminDonHang();
         $this->modelSanPham = new AdminSanPham();
     }
-    public function   danhSachQuanTri() {}
-    public function     formAddQuanTri() {}
+    public function danhSachQuanTri() {}
+    public function formAddQuanTri() {}
     public function postAddQuanTri() {}
     public function formEditQuanTri() {}
     public function postEditQuanTri() {}
