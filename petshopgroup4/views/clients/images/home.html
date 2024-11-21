@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="flex justify-between items-center p-4 bg-white shadow-md">
+        <div class="flex items-center text-red-800 font-bold text-xl">
+          <img src="#" alt="" class="h-8 mr-2">
+          <span>Pet House</span>
+        </div>
+        <nav class="flex gap-8 font-semibold text-lg">
+            <a href="#" class="relative group text-red-800 hover:text-blue-600 transform hover:scale-110 transition-transform duration-300">
+              Home
+              <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#" class="relative group text-red-800 hover:text-blue-600 transform hover:scale-110 transition-transform duration-300">
+              Shop
+              <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#" class="relative group text-red-800 hover:text-blue-600 transform hover:scale-110 transition-transform duration-300">
+              About
+              <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#" class="relative group text-red-800 hover:text-blue-600 transform hover:scale-110 transition-transform duration-300">
+              Contact
+              <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </nav>
+        <div class="flex gap-4 text-red-800 text-xl">
+          <a href="#" class="hover:text-green-600"><i class="fa-solid fa-user"></i></a>
+          <a href="#" class="hover:text-green-600"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#" class="hover:text-green-600"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </header>
+      <div style="width: 100%; height: 250px;">
+        <img src="/images/2.jpg" alt="Banner Image" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <main class="mt-3">
+        <section class="new-products mb-12">
+            <!-- Section Header -->
+            <div class="flex justify-between items-center mb-6">
+              <h2 class="text-2xl font-bold text-red-800">New Products</h2>
+              <a href="#" class="text-red-800 font-bold text-sm border border-red-800 px-4 py-2 rounded-md transition-colors duration-300 hover:bg-red-800 hover:text-white">
+                View all products
+              </a>
+            </div>
+            <!-- Product Grid -->
+            <div class="grid grid-cols-4 gap-6">
+                <!-- Product Item -->
+                <div class="text-center border border-gray-300 rounded-lg p-4 transition-transform duration-300 hover:scale-105">
+                  <div class="overflow-hidden">
+                    <img src="/images/1.jpg" alt="Bull" class="w-full rounded-lg mb-4 transition-transform duration-300 transform hover:scale-110">
+                  </div>
+                  <h3 class="text-lg font-semibold mb-2">Bull</h3>
+                  <p class="text-gray-600 mb-2">Dog Bull</p>
+                  <span class="text-red-800 font-bold block mb-4">2,500,000đ</span>
+                  <button class="border border-red-800 text-red-800 px-4 py-2 rounded-md transition-colors duration-300 hover:bg-red-800 hover:text-white">
+                    Add to cart
+                  </button>
+                </div>
+              <!-- Repeat Product Item -->
+              <div class="text-center border border-gray-300 rounded-lg p-4 transition-transform duration-300 hover:scale-105">
+                <div class="overflow-hidden">
+                  <img src="/images/3.jpg" alt="Dalmatian" class="w-full rounded-lg mb-4 transition-transform duration-300 transform hover:scale-110">
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Husky</h3>
+                <p class="text-gray-600 mb-2">Dog Husky</p>
+                <span class="text-red-800 font-bold block mb-4">2,800,000đ</span>
+                <button class="border border-red-800 text-red-800 px-4 py-2 rounded-md transition-colors duration-300 hover:bg-red-800 hover:text-white">
+                  Add to cart
+                </button>
+              </div>
+              <div class="text-center border border-gray-300 rounded-lg p-4 transition-transform duration-300 hover:scale-105">
+                <div class="overflow-hidden">
+                  <img src="/images/2.webp" alt="Dalmatian" class="w-full rounded-lg mb-4 transition-transform duration-300 transform hover:scale-110">
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Dalmatian</h3>
+                <p class="text-gray-600 mb-2">Dog Dalmatian</p>
+                <span class="text-red-800 font-bold block mb-4">1,800,000đ</span>
+                <button class="border border-red-800 text-red-800 px-4 py-2 rounded-md transition-colors duration-300 hover:bg-red-800 hover:text-white">
+                  Add to cart
+                </button>
+              </div>
+              <div class="text-center border border-gray-300 rounded-lg p-4 transition-transform duration-300 hover:scale-105">
+                <div class="overflow-hidden">
+                  <img src="/images/4.jpg" alt="Dalmatian" class="w-full rounded-lg mb-4 transition-transform duration-300 transform hover:scale-110">
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Bug</h3>
+                <p class="text-gray-600 mb-2">Dog Bug</p>
+                <span class="text-red-800 font-bold block mb-4">1,500,000đ</span>
+                <button class="border border-red-800 text-red-800 px-4 py-2 rounded-md transition-colors duration-300 hover:bg-red-800 hover:text-white">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </section>
+          <section class="gallery">
+            <div class="section-header flex justify-between items-center mb-6">
+              <h2 class="text-2xl font-bold text-red-800">Gallery</h2>
+              <a href="#" class="text-red-800 font-bold text-sm border border-red-800 px-4 py-2 rounded-md transition-colors duration-300 hover:bg-red-800 hover:text-white">
+                View all gallery
+              </a>
+            </div>
+            <div class="gallery-grid grid grid-cols-3 gap-6">
+              <img src="/images/3.jpg" alt="Gallery Image 1" class="w-full rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:blur-sm gallery-image">
+              <img src="/images/5.jpg" alt="Gallery Image 2" class="w-full rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:blur-sm gallery-image">
+              <img src="/images/7.jpg" alt="Gallery Image 3" class="w-full rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:blur-sm gallery-image">
+              <img src="/images/8.jpg" alt="Gallery Image 4" class="w-full rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:blur-sm gallery-image">
+              <img src="/images/9.jpg" alt="Gallery Image 5" class="w-full rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:blur-sm gallery-image">
+              <img src="/images/10.jpg" alt="Gallery Image 6" class="w-full rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:blur-sm gallery-image">
+            </div>
+          </section>
+          <section class="news mb-12 mt-3">
+            <div class="section-header flex justify-between items-center mb-6">
+              <h2 class="text-2xl font-bold text-red-800">News</h2>
+              <a href="#" class="text-red-800 font-bold text-sm border border-red-800 px-4 py-2 rounded-md transition-colors duration-300 hover:bg-red-800 hover:text-white">
+                View all news
+              </a>
+            </div>
+            <div class="news-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              <div class="news-item text-left">
+                <img src="/images/5.jpg" alt="News 1" class="w-full rounded-lg mb-3">
+                <span class="text-sm text-gray-600 block mb-2">24/11/2024</span>
+                <p class="text-lg mb-3">Dogs are our friends</p>
+                <a href="#" class="text-red-800 font-semibold text-lg hover:text-gray-700 transition-colors">Xem chi tiết →</a>
+              </div>
+              <div class="news-item text-left">
+                <img src="/images/10.jpg" alt="News 2" class="w-full rounded-lg mb-3">
+                <span class="text-sm text-gray-600 block mb-2">24/11/2024</span>
+                <p class="text-lg mb-3">Dogs are our friends</p>
+                <a href="#" class="text-red-800 font-semibold text-lg hover:text-gray-700 transition-colors">Xem chi tiết →</a>
+              </div>
+              <div class="news-item text-left">
+                <img src="/images/4.jpg" alt="News 3" class="w-full rounded-lg mb-3">
+                <span class="text-sm text-gray-600 block mb-2">24/11/2024</span>
+                <p class="text-lg mb-3">Dogs are our friends</p>
+                <a href="#" class="text-red-800 font-semibold text-lg hover:text-gray-700 transition-colors">Xem chi tiết →</a>
+              </div>
+              <div class="news-item text-left">
+                <img src="/images/9.jpg" alt="News 4" class="w-full rounded-lg mb-3">
+                <span class="text-sm text-gray-600 block mb-2">24/11/2024</span>
+                <p class="text-lg mb-3">Dogs are our friends</p>
+                <a href="#" class="text-red-800 font-semibold text-lg hover:text-gray-700 transition-colors">Xem chi tiết →</a>
+              </div>
+            </div>
+          </section>
+          <div class="features-section flex justify-around items-center p-5 bg-pink-100">
+            <!-- Tính năng 1 -->
+            <div class="feature text-center max-w-xs">
+              <img src="/images/cup.jpg" alt="High Quality" class="w-10 h-10 mb-2 mx-auto">
+              <h4 class="text-lg font-semibold text-gray-700 mb-1">High Quality</h4>
+              <p class="text-sm text-gray-600">Crafted from top materials</p>
+            </div>
+            <!-- Tính năng 2 -->
+            <div class="feature text-center max-w-xs">
+              <img src="/images/cskh.png" alt="24/7 Support" class="w-10 h-10 mb-2 mx-auto">
+              <h4 class="text-lg font-semibold text-gray-700 mb-1">24 / 7 Support</h4>
+              <p class="text-sm text-gray-600">Dedicated support</p>
+            </div>         
+            <!-- Tính năng 3 -->
+            <div class="feature text-center max-w-xs">
+              <img src="/images/dấu tích.png" alt="Warranty Protection" class="w-10 h-10 mb-2 mx-auto">
+              <h4 class="text-lg font-semibold text-gray-700 mb-1">Warranty Protection</h4>
+              <p class="text-sm text-gray-600">Over 2 years</p>
+            </div>
+            <!-- Tính năng 4 -->
+            <div class="feature text-center max-w-xs">
+              <img src="/images/freeship.jpg" alt="Free Shipping" class="w-10 h-10 mb-2 mx-auto">
+              <h4 class="text-lg font-semibold text-gray-700 mb-1">Free Shipping</h4>
+              <p class="text-sm text-gray-600">Order over 150 $</p>
+            </div>
+          </div>          
+      </main>
+      
+      <footer class="bg-teal-500 text-white p-5 md:p-10 flex flex-wrap justify-between">
+        <!-- Cột 1 -->
+        <div class="footer-column flex-1 min-w-[200px] mb-5">
+          <h4 class="mb-2">Chăm sóc khách hàng</h4>
+          <div class="footer-contact flex items-center">
+            <img src="/images/phone.jpg" alt="Phone Icon" class="w-10 h-10 mr-3">
+            <div>
+              <p>0123456789</p>
+              <p>abc@gmail.com</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Đường kẻ dọc -->
+        <div class="vertical-line hidden md:block w-[2px] h-52 bg-black mx-5"></div>
+    
+        <!-- Cột 2 -->
+        <div class="footer-column flex-1 min-w-[200px] mb-5">
+          <h4 class="mb-2">Chăm sóc khách hàng</h4>
+          <a href="#" class="text-white text-sm block mb-2 hover:underline">Liên hệ hỗ trợ</a>
+          <a href="#" class="text-white text-sm block mb-2 hover:underline">Hướng dẫn mua hàng</a>
+          <a href="#" class="text-white text-sm block mb-2 hover:underline">Quan điểm kinh doanh</a>
+        </div>
+    
+        <!-- Cột 3 -->
+        <div class="footer-column flex-1 min-w-[200px] mb-5">
+          <h4 class="mb-2">Chính sách</h4>
+          <a href="#" class="text-white text-sm block mb-2 hover:underline">Chính sách đổi hàng</a>
+          <a href="#" class="text-white text-sm block mb-2 hover:underline">Chính sách vận chuyển</a>
+        </div>
+    
+        <!-- Cột 4 -->
+        <div class="footer-column flex-1 min-w-[200px] mb-5">
+          <h4 class="mb-2">Đối tác liên hệ</h4>
+          <div class="social-icons flex gap-3">
+            <a href="#" class="text-white text-xl hover:text-gray-300">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="#" class="text-white text-xl hover:text-gray-300">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" class="text-white text-xl hover:text-gray-300">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
